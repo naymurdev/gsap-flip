@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <main
+      data-barba="container"
+      data-barba-namespace="details"
+      class="w-full h-fit bg-white text-black">
+      <section
+        class="w-full pt-2 max-w-screen-lg mx-auto text-black bg-white p-4 overflow-hidden">
+        <a href="/about.html" class="text-8xl leading-1 rounded-xl">
+          <i class="bx bx-left-arrow-alt"></i>
+        </a>
+        <h1 class="text-6xl font-semibold py-4">Projects Details*</h1>
+        <div class="imgdiv overflow-hidden">
+          <img src="/images/img5.jpg" class="w-full object-cover" alt="" />
+        </div>
+        <p class="leading-1 py-2 text-xl">
+          The Amazon Jungle, often referred to as the "Lungs of the Earth," is a
+          vast and unparalleled ecosystem that sprawls across South America,
+          covering over 6.7 million square kilometers. This extraordinary
+          rainforest is home to an astounding diversity of flora and fauna, many
+          of which remain undiscovered by science. Teeming with life, the Amazon
+          is a complex web of interconnected ecosystems, from dense, towering
+          canopies to winding river systems. The sheer scale of biodiversity in
+          the Amazon is awe-inspiring, housing countless species of plants,
+          animals, and insects. The rich tapestry of life includes iconic
+          inhabitants like jaguars, anacondas, and vibrant macaws, all
+          coexisting in a delicate balance.
+        </p>
+        <p class="leading-1 py-2 text-xl">
+          Beyond its biological significance, the Amazon plays a crucial role in
+          regulating global climate patterns by absorbing and storing vast
+          amounts of carbon dioxide. However, this irreplaceable natural wonder
+          faces ongoing threats from deforestation, climate change, and human
+          activities, emphasizing the urgent need for conservation efforts to
+          preserve this invaluable ecological treasure for future generations.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

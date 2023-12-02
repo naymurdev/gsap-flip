@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main
+      data-barba="container"
+      data-barba-namespace="about"
+      class="w-full h-fit bg-white text-black">
+      <header
+        class="flex justify-between p-5 px-8 items-center fixed z-10 top-0 w-full bg-white text-black">
+        <div class="logo text-4xl font-semibold animationHead">LOGO</div>
+        <ul
+          class="flex gap-8 px-12 py-2 font-medium text-xl border-2 border-black rounded-full items-center animationHead">
+          <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+        </ul>
+      </header>
+      <section class="w-full pt-32 container mx-auto text-black bg-white p-4">
+        <div class="overflow-hidden">
+          <p class="text-5xl w-[90%] py-4 paragraph">
+            An creative and passionate photographer 📷 dedicated to capturing
+            the beauty of the world through my lens. With a keen eye for the
+            extraordinary in the ordinary.Join me on a visual journey as we
+            explore the world's wonders one frame at a time.✨
+          </p>
+          <hr />
+        </div>
+        <h1 class="text-6xl font-semibold py-4">Projects*</h1>
+        <div class="grid grid-cols-3 gap-4">
+          <a href="/details.html">
+            <div class="imgdiv overflow-hidden">
+              <img
+                src="/images/img5.jpg"
+                class="w-full object-cover firstimg"
+                alt="" />
+            </div>
+          </a>
+          <div class="imgdiv overflow-hidden">
+            <img src="/images/img1.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="imgdiv overflow-hidden">
+            <img src="/images/img3.jpg" class="w-full object-cover" alt="" />
+          </div>
+
+          <div class="imgdiv overflow-hidden">
+            <img src="/images/img8.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="imgdiv overflow-hidden">
+            <img src="/images/img9.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="imgdiv overflow-hidden">
+            <img src="/images/img5.jpg" class="w-full object-cover" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

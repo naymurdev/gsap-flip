@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsap-flip with barbajs animaiton</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main
+      data-barba="container"
+      data-barba-namespace="home"
+      class="w-full h-screen bg-white text-black relative">
+      <header
+        class="flex justify-between p-5 px-8 items-center fixed z-10 top-0 w-full bg-white text-black">
+        <div class="logo text-4xl font-semibold headAnime">LOGO</div>
+        <ul
+          class="flex gap-8 headAnime px-12 py-2 font-medium text-xl border-2 border-black rounded-full items-center">
+          <li>Home</li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </header>
+
+      <div
+        class="description w-[70%] text-7xl mx-auto grid place-content-center">
+        <h1 class="font-semibold py-2 stagged">Hello, I'm STEVEN,</h1>
+        <p class="stagged">
+          A creative photographer from <br />
+          <span class="font-semibold">France.</span>📷✨
+        </p>
+      </div>
+
+      <div class="intro__images initial">
+        <img src="/images/img1.jpg" alt="" class="object-cover" />
+        <img src="/images/img2.jpg" alt="" class="object-cover" />
+        <img src="/images/img3.jpg" alt="" class="object-cover" />
+        <img
+          src="/images/img4.jpg"
+          alt=""
+          class="object-cover centerImg"
+          data-hidden />
+        <img src="/images/img5.jpg" alt="" class="object-cover" />
+        <img src="/images/img6.jpg" alt="" class="object-cover" />
+        <img src="/images/img7.jpg" alt="" class="object-cover" />
+      </div>
+
+      <div
+        class="grid grid-cols-7 image-grid absolute bottom-0 w-full gap-4 h-60"></div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
